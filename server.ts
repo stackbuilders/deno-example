@@ -1,5 +1,5 @@
 import { Application, Router } from "https://deno.land/x/oak@v6.3.0/mod.ts";
-import { home, postPeople, downloadPeople } from "./routes.ts";
+import { downloadCsv, home, postPeople } from "./routes.ts";
 
 const app = new Application();
 const router = new Router();
@@ -7,7 +7,7 @@ const router = new Router();
 router
   .get("/", home)
   .post("/people", postPeople)
-  .post("/download", downloadPeople)
+  .post("/download", downloadCsv)
 
 app.addEventListener('error', evt => {
   console.log(evt.error);

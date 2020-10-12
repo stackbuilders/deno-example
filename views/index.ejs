@@ -66,8 +66,8 @@
       <tbody>
         <% people.forEach(function(person) { %>
           <tr>
-            <td><%= person[0] %></td>
-            <td><%= person[1] %></td>
+            <td><%= person.fullName %></td>
+            <td><%= person.age %></td>
           </tr>
         <% }) %>
       </tbody>
