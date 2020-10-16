@@ -1,4 +1,4 @@
-import { RouterContext, send } from "https://deno.land/x/oak@v6.3.0/mod.ts";
+import { RouterContext } from "https://deno.land/x/oak@v6.3.0/mod.ts";
 
 import { Person } from "./types.ts";
 import { renderFileToString } from "https://deno.land/x/dejs@0.8.0/mod.ts";
